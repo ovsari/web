@@ -1,0 +1,15 @@
+<h1 id="name">Name</h1>
+<button id="bt" onclick="btn(event)"  >OVIYA</button>
+<button onclick="btn(event)"  >ABI</button>
+<button  onclick="btn(event)" >PRABAVATHY</button>
+<button onclick="btn(event)">ARIKRISHNAN</button>
+
+<script>
+    var a=document.getElementById("name")
+    var b=document.getElementById("bt")//not necessary
+    function btn(event){
+       a.textContent=event.target.textContent
+       event.target.remove()
+       //console.log(event)
+    }
+</script>

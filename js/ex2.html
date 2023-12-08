@@ -1,0 +1,29 @@
+<center>
+<table>
+<tr>
+<td>Num1:</td>
+<td><input id="num1" type="text" placeholder="Enter the num1" value=""></td>
+</tr>
+<tr>
+<td>Num2:</td>
+<td><input id="num2" type="text" placeholder="Enter the num2" value=""></td>
+</tr>
+<tr>
+<td><button onclick="total()">Total</button></td>
+</tr>
+</table>
+<p id="res">
+    result
+</p>
+</center>
+<script>
+function total(){
+    var a=document.getElementById("num1")
+    var b=document.getElementById("num2")
+    var result=document.getElementById("res")
+    var n1=Number(a.value)
+    var n2=Number(b.value)
+    var add=n1 + n2
+    result.textContent=add
+}
+</script>

@@ -1,0 +1,19 @@
+<h1 id="title">
+hello world
+</h1>
+<style>
+h1:hover{
+    color:red;
+    cursor:pointer;
+}
+</style>
+<button onclick="change()">Change</button>
+<script>
+    let text=document.getElementById("title")
+    console.log(text.innerText)
+   // text.textContent="Bye World"
+    //inspect nd see the diff in console
+function change(){
+    text.innerText="Bye World"
+}
+</script>

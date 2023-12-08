@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Foodies Food</title>
+  
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yellowtail&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+body {
+    background-image: linear-gradient(105.3deg, rgba(30, 39, 107, 1) 21.8%, rgba(77, 118, 221, 1) 100.2%);
+    font-family: sans-serif;
+    font-size: 2.5vmin;
+    user-select: none;
+    text-align:center ;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+h2 {
+    color: #ff8899;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+div.scrollmenu {
+    background-color: #000;
+    overflow: auto;
+    white-space: nowrap;
+    font-family: 'Indie Flower', cursive;
+    font-size:15px;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+div.scrollmenu a:hover {
+    background-color: #207;
+}
+
+button {
+    border-radius: 2vh;
+    color: #000;
+    display: inline-block;
+    font-size: 4vmin;
+    padding: 3vh 5vw;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transform: 0.2s;
+    font-family:'Walter Turncoat', cursive;
+    font-size:9px;
+}
+
+.text {
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+.items {
+    border-radius: 2vh;
+    height: calc(90vw);
+    width: 90vw;
+    max-height: 90vh;
+    max-width: calc(90vh);
+}
+
+#container {
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: "Courier New", Courier, monospace;
+    color: #ff9876;
+}
+
+span {
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+}
+
+.logo{
+    background-color:#111;
+    /* padding-right:333px;
+    padding-top:50px; */
+
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logotext{
+    /* padding-bottom:120px;
+    padding-left:120px; */
+    color:#ffffff;
+    font-size:40px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight:bolder ;
+
+    text-align: center;
+}
+
+#contact{
+    background-color:#111;
+}
+
+button{
+    margin: 4px;
+    color: #FFF;  
+    background: linear-gradient(deepskyblue, aqua);
+    font-family: 'Walter Turncoat', cursive;
+    font-size:14px;
+    font-weight:bolder ;
+}
+
+div#🔝 a{
+         position: fixed;
+         bottom: 1vh;
+         right: 5vw;
+         color:white;
+         font-size: 4vh;
+
+         -webkit-text-decoration-line: none;
+         text-decoration-line: none;
+
+        }
+
+h2#about{
+    font-family: "Courier New", Courier, monospace;
+}
+
+h2#menu{
+    font-family: "Courier New", Courier, monospace;
+}
+
+.p{
+    font-family: 'Nerko One', cursive;
+    font-size:25px;
+    color:#FFF;
+}
+
+.icons{
+    border-radius:20px;
+}
+
+</style>
+
+<body>
+
+<div id="container">
+
+ <div class="logo">  
+ 
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKBL-0Fqu-4tMJa80dT2rv12E7rrqmMWhMw&usqp=CAU" alt="header logo" height="290" width="340"/>
+     
+ <div class="logotext">Foodies Food</div></div>
+
+    <section id="home">
+
+      <div class="scrollmenu">
+      
+        <a href="#home" 
+onclick="exp1(250)">Home</a>
+        
+        <a href="#about" onclick=" exp2 (250)">About Us</a>
+        
+        <a href="#menu" onclick=" exp3 (250)">Menu</a>
+        
+        <a href="#contact" onclick=" exp4 (250)">Contact Us</a>
+        
+      </div>
+      
+    </section>
+
+    <h2>Welcome To Foodies <br />Food!</h2><br /><br /><br />
+    
+    <h2 id="about"><span>About Us</span></div><br /><br />
+    
+    <p class="paragraph">Hey there, Welcome to Foodies Food. Foodies Food is a free Fast Food Website. Here you can order your favourite cooked food, deserts and non-vegetarian food also. </p> <br /><br /><br />
+    
+    <h2 id="menu"><span>Menu</span></h2><br /><br /><br />
+    
+   <div class="text">
+
+   <img class="items" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQienb0fbcsmDn5QRo079cp8lyg0l2Jui0oIQ&usqp=CAU" width="360" height="360"><br />
+   
+    <input type="checkbox" class="input-checkbox" value="Sandwich" name="item1">Sandwich</label>
+    
+      <p>
+      
+        <img class="items" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD0bAxEzKuAo_4eIlVH5IHDBXRhFNTLH3NkA&usqp=CAU"><br />
+        <input type="checkbox" class="input-checkbox" value="Hamburger" name="item2">
+        <label for="Hamburger"> Hamburger </label><br />
+      </p>
+      <p>
+        <img class="items"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQtVCUgB1yMrEZnMDyY7MNz1bFjNUNcXsUQ&usqp=CAU"><br />
+        <input type="checkbox" class="input-checkbox" value="Pizza" name="item3">
+        <label for="Pizza"> Pizza </label><br />
+      </p>
+      <p>
+        <img class="items"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6o50xyyWvnhPO758XDDj3w_Coh10JiSyIw&usqp=CAU"><br />
+        <input type="checkbox" class="input-checkbox" value="Pasta" name="item4">
+        <label for="Pasta"> Chicken Spaghetti </label><br />
+      </p>
+      <p>
+        <img class="items"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzrpcjX--clZFELAL0OvAXTkijH1gRPhdaA&usqp=CAU"><br />
+        <input type="checkbox" class="input-checkbox" value="Meat" name="item5">
+        <label for="Pasta"> Meat </label><br />
+      </p>
+      <p>
+        <img class="items"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73x70hBc6EC-sDuQoEW7g538JE4rggYJn3g&usqp=CAU"><br />
+        <input type="checkbox" class="input-checkbox" value="Pancake" name="item6">
+        <label for="Pasta"> Pancake </label><br />
+    <img class="items" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQMFBwHMHKPihyFJfEpJRUlOR4x9h5VKZ3Aw&usqp=CAU" width="360" height="360"><br />
+<label>
+<input type="checkbox" class="input-checkbox" value="Noddles" name="item7"> Noddles </label><br />
+<img class="items" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzEYwAHMHMDHLUFJPfjFwYI_cstdUFhmKv9w&usqp=CAU" width="360" height="360"><br />
+<label>
+<input type="checkbox" class="input-checkbox" value="Ice-cream" name="item8"> Ice-cream </label>
+      </p>
+    </div><br />
+    
+<div id="order"><button class="btn" onclick='Toast("Your order will be delivered in just 5 minutes", "#fff", "#0f9")'>Order Now!</button>
+
+<!-- Toast credits goes to Assassin -->
+      
+<button class="btn" onclick='Toast("Your order is canceled", "#ffffff", "#ff0000")'>Cancel Order</button></div><br /><br /><br /><br /><br />
+
+    <div class="Contact" id="contact">
+<br /><br /><br /><br />
+
+ <h2><span>Contact us</span></h2><br /><br /><p class="p">You can Contact us on<br /><br />
+     
+ <img class="icons" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJnru_4UmSr_eImIWachmRKRnlOcAG2CgF4g&usqp=CAU" height="40" width="40"> Instagram <br />
+     
+ <img class="icons" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" height="40" width="40"> Facebook <br />
+     
+ <img class="icons" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxKxzrPDtJEsF8S11ttyvdmGVTvkFgfHgeg&usqp=CAU"  width="40" height="40"> Twitter <br /><br /><br /></p></div>
+ 
+    <h2>Hope You Enjoyed !</h2>
+    
+  <script src="https://cdn.jsdelivr.net/gh/AssassinAguilar/Alertism/dist/V1.0.0/main.js"></script>
+  
+  <div id="🔝">
+  
+            <a href="#home">🔝</a>
+            
+        </div>
+        
+</body>
+<script>
+    function exp1(val) {
+  if (navigator.vibrate) {
+    navigator.vibrate(val);
+  } else {
+    alert('vibrate not supported');
+  }
+}
+
+function exp2(val) {
+  if (navigator.vibrate) {
+    navigator.vibrate(val);
+  } else {
+    alert('vibrate not supported');
+  }
+}
+function exp3(val) {
+  if (navigator.vibrate) {
+    navigator.vibrate(val);
+  } else {
+    alert('vibrate not supported');
+  }
+}
+
+function exp4(val) {
+  if (navigator.vibrate) {
+    navigator.vibrate(val);
+  } else {
+    alert('vibrate not supported');
+  }
+}
+
+
+</script>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ragistration Form </title>
+    </head>
+    <style>
+        body {
+    background-color:#F57483;
+    background-image:        url('https://www.fonewalls.com/wp-content/uploads/2019/10/Gradient-Background-Wallpaper-074.jpg');
+     background-size: cover;
+     font-family:Georgia, serif;
+}
+
+#ragistrationpage{
+    text-align:center ;
+    color:white;
+    background-color:#F32F51;
+    font-family: Georgia, serif;
+    padding-top:5px;
+    border-radius:10px;
+}
+
+#seconddiv{
+ padding-left:15%; 
+ padding-right:15%; 
+ padding-top:10%;
+ padding-bottom:10%;
+ background-color:#f2f2f2; 
+ border-radius:10px;    
+}
+
+#thirddiv{
+   background-color:#f2f2f2;
+   border-radius:10px; 
+   margin-top :10px;
+   margin-bottom : 10px;
+   padding-bottom: 20px;
+   padding-left: 20px; 
+}  
+
+.input
+{ 
+  padding:12px 20px;
+  display:inline-block ;
+  width:100%;
+  box-sizing:border-box ;
+  margin:2px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-color:red;
+  border-width:2px;
+}
+
+#container{
+    color:#F32F51 ;
+    font-size:140%;  
+}
+
+.nyc{
+     color:red;
+     font-size:120%;  
+}
+
+.footer{
+  background-color:#F32F51;
+  padding-bottom:30px;
+  border-radius:10px;
+  color:white;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+#button{
+  background-color:#4CB050;
+  color:black;
+  padding:10px 25px;
+  margin-left:20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-color:black;
+  border-width:2px;
+  background-image:        url('https://www.fonewalls.com/wp-content/uploads/2019/10/Gradient-Background-Wallpaper-074.jpg');
+    background-size:cover;
+}
+
+#button1
+{
+    color:white;
+    text:bold;
+    font-size:120%;
+    font-weight:bold;
+    font-family: Georgia, serif;  
+}
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+
+#dropdesign{
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 190px;
+}
+
+#fileinput::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#fileinput::before {
+  content: 'Select some files';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+
+    </style>
+    <body>
+<form form="form1">
+    <div id="ragistrationpage">
+         <p>   <h2 >REGISTRATION FORM</h2>  </p>       
+   </div>
+   
+         <br />
+         <div id="seconddiv" >
+         <label>
+             <input type="text"
+                    class="input"
+                    name="fullname"
+                    placeholder="Full Name :"
+                    maxlength="50"
+                    required>   
+        </label>
+         
+         <br />
+         <br />
+         <label>
+             <input type="email"
+                    required 
+                    class="input"
+                    name="email"
+                    placeholder=" Email : "
+                    maxlength="50">     
+         </label>
+                
+         <br />
+         <br />
+         <label>
+             <input type="number"
+                    required 
+                    class="input"
+                    name="Contact"
+                    placeholder="Contact No.: "
+                    maxlength="10">     
+         </label>
+         <br />
+         <br />
+         <label>
+             <input type="number"
+                    required 
+                    class="input"
+                    name="enrollment"
+                    placeholder="Enrollment No. : "
+                    maxlength="15">     
+         </label>
+         <br />
+         <br />
+         <label>
+             <input type="text"
+                    required 
+                    class="input"
+                    name="branch"
+                    placeholder="Department :">   
+         </label>
+</div>
+       
+       <div id="thirddiv">  
+         <br />  
+         <br /> 
+         <label id="container" required> Gender :</label>
+         <br />
+         <br />
+         <input type="radio" name="gender">
+         <label class="nyc">Male
+         <span class="cont"></span>
+         </label>
+         <br />
+         <input type="radio" name="gender">
+         <label class="nyc">Female 
+         <span class="cont"></span>
+         </label>
+         <br />
+         <input type="radio" name="gender">
+         <label class="nyc">Other
+         <span class="cont"></span>
+         </label>
+            
+         <br />
+         <br />     
+         <br />
+         <label id="container"
+                style="display:block;"
+                required>Birth Date: 
+         </label> 
+         <br />
+         <input id="dropdesign"
+                type="date" 
+                id="birthday" 
+                name="birthday">
+         
+         <br />
+         <br />
+         <br />
+         <label id="container"required> Course :</label>  
+         <br /> 
+         <br />
+         <select id="dropdesign">  
+         <option value="Course">Course</option>  
+         <option value="BCA">BCA</option>  
+         <option value="B.E.">B.E.</option>  
+         <option value="M.E.">M.E.</option>  
+         <option value="BBA">BBA</option>  
+         <option value="B.Tech">B.Tech</option>  
+         <option value="MBA">MBA</option>  
+         <option value="MCA">MCA</option>  
+         <option value="M.Tech">M.Tech</option>  
+         </select>   
+         
+         <br />
+         <br />
+         <br />
+         <label id="container" required> Semester: </label>  
+         <br />
+         <br />
+         <select id="dropdesign"> 
+         <option value="semester">Semester</option>   
+         <option value="sem1">Sem 1</option>  
+         <option value="sem2">Sem 2</option>  
+         <option value="sem3">Sem 3</option>  
+         <option value="sem4">Sem 4</option>  
+         <option value="sem5">Sem 5</option>  
+         <option value="sem6">Sem 6</option>  
+         <option value="sem7">Sem 7</option>  
+         <option value="sem8">Sem 8</option>  
+    
+         </select>  
+         
+                 
+         <br />
+         <br />  
+         <br />
+         <label id="container" > Hobbies: </label>
+         <br />
+         <input type="checkbox"
+                id="hobbies"
+                name="hobbies"
+                value="music">
+         <label id="container"> Music</label> 
+         <br />  
+         <input type="checkbox"
+                id="hobbies"
+                name="hobbies"
+                value="sports">
+         <label id="container"> Sports</label>
+         <br />  
+         <input type="checkbox"
+                id="hobbies"
+                name="hobbies"
+                value="travel">
+         <label id="container">Travel</label>
+         <br />  
+   
+         <input type="checkbox"
+                id="hobbies"
+                name="hobbies"
+                value="movies">
+         <label id="container">Movies</label>
+         <br />
+         <input type="checkbox" name="hobbies" value="other">
+         <label id="container">other</label>
+         <br />
+    
+         <input id="dropdesign"type="text" name="hobbies">      
+  
+         <br />
+         <br />    
+         <br />
+         <label id="container">Address :</label>
+         <br />
+         
+         <textarea id="dropdesign" 
+                   name="address" 
+                   rows="4" 
+                   cols="50"
+                   required>
+         </textarea>
+         
+         <br />
+         <br />  
+   <label id="container">Upload Scanned Image of Student card</label>
+   <br />    
+   <br />
+         <input type="file"
+                id="fileinput"
+                name="studentcard"
+                required>
+ </div>
+    <div class="footer">
+             <br />
+             <br /> 
+     </form>    
+             <center> <button id="button"type="submit">
+             <label id="button1">SUBMIT</label>
+             </button>
+             <button id="button" type="reset">
+             <label id="button1">RESET</label>
+         
+         
+             </button>
+          
+          
+          
+<div> </div>
+          
+          
+</body>
+</html>
