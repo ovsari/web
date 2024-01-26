@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url("img/OIP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    font-size: 1rem;
+    }
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+.content{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+    border-radius: 30px;
+    background-color: rgb(134, 134, 134);
+    gap:10%;
+}
+h1{
+    margin: 2%;
+    font-family:cursive,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    font-size: large;
+}
+.box{
+    cursor: pointer;
+}
+.box h2{
+    border-radius: 10px;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+small{
+    color: black;
+}
+@media screen and (max-width:650px){
+    .content{
+        padding: 3% 10%;
+        background-color: rgb(128, 128, 128);
+    }
+}
